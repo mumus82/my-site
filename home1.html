@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>AddYGood</title>
+    <style type="text/css">
+      .product-name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 55px;
+        font-weight: bold;
+        text-align: center;
+        color: gray;
+        margin: 0;
+      }
+      .product-description-title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 38px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .menu, .menu a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        text-align: left;
+      }
+      .text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        line-height: 170%;
+        text-align: left;
+      }
+      .copyright {
+        margin-top: 50px;
+        text-align: right;
+        font-size: 11px;
+      }
+      body {
+        display: grid;
+        grid-template-areas:
+                "header header header"
+                "nav article ads"
+                "footer footer footer";
+        grid-template-rows: 80px 1fr 80px;
+        grid-template-columns: 20% 1fr 15%;
+        grid-gap: 5px;
+        height: 100vh;
+        margin: 0;
+      }
+      header, footer, article, nav, div { padding: 5px }
+      #_header { grid-area: header }
+      #_footer { grid-area: footer }
+      #_content { grid-area: article }
+      #_navLeft { grid-area: nav }
+      #_navRight { grid-area: ads }
+    </style>
+  </head>
+  <body>
+    <header id="_header"><div class="product-name">AddYGood</div></header>
+    <nav id="_navLeft"></nav>
+
+    <article id="_content">
+      <div class="menu">
+        <a href="index.html" style="text-decoration:underline">Home</a> | <a href="https://gmail.com">Contacts</a> | <a href="./access/login.html">Login</a>
+      </div>
+      </br></br></br></br></br></br></br></br></br>
+      <div class="product-description-title">Online storage for your services and goods</div>
+      <br/><br/><br/><br/><br/><br/>
+      <div class="text">
+        &bull; describe  your good or service</br>
+        &bull; get an eternal link</br>
+        &bull; store</br>
+        &bull; view</br>
+        &bull; share</br>
+        &bull; archive</br>
+        &bull; transfer</br>
+      </div>
+    </article>
+
+    <div id="_navRight"></div>
+    <footer id="_footer" class="copyright">&copy; 2019 AddYGood from Linstam, Inc. All rights reserved. </footer>
+  </body>
+</html>
